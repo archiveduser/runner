@@ -1,7 +1,7 @@
 FROM node:24-alpine3.21
 
 RUN set -eux; \
-    apk add --no-cache python3 py3-pip git; \
+    apk add --no-cache python3 py3-pip git bash; \
     mkdir -p /etc; \
     echo '[global]' > /etc/pip.conf; \
     echo 'break-system-packages = true' >> /etc/pip.conf; \
